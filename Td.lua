@@ -40,7 +40,7 @@ local function translateText(text)
     end
     
     local success, result = pcall(function()
-        local url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=zh-es&dt=t&q=" .. HttpService:UrlEncode(text)
+        local url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=es&dt=t&q=" .. HttpService:UrlEncode(text)
         local response = game:HttpGet(url)
         local decoded = HttpService:JSONDecode(response)
         if decoded and decoded[1] and decoded[1][1] and decoded[1][1][1] then
