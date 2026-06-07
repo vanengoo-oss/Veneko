@@ -1,6 +1,7 @@
 local RunService = game:GetService("RunService")
 local Chat = game:GetService("Chat")
 local CoreGui = game:GetService("CoreGui")
+local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
 local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/JsYb666/UI/refs/heads/main/Wind%20lib.txt"))()
